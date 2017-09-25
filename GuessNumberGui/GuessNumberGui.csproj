@@ -79,9 +79,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GuessNumberLib\GuessNumberLib.csproj">
-      <Project>{6f28bfde-1edf-46cb-aaad-73a39ac0cc69}</Project>
-      <Name>GuessNumberLib</Name>
+    <ProjectReference Include="..\GuessNumberLib2\GuessNumberLib2.csproj">
+      <Project>{3ed7de2a-113a-468a-83ec-b0722e2cb416}</Project>
+      <Name>GuessNumberLib2</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
