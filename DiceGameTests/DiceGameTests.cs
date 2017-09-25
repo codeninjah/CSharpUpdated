@@ -1,25 +1,25 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DiceGame;
+using ThrowDicesLib;
+using System.Diagnostics;
 
-namespace DiceGameTests
+namespace ThrowDicesTestsLib
 {
 	[TestClass]
-	public class DiceGameTests
+	public class ThrowDicesTests
 	{
 		[TestMethod]
-		public void Dices()
+		public void Throws_Seven_Wins()
 		{
-			//Assemble
-			Game Spelet = new Game();
-			Spelet.ThrowDices();
-
-			while (!Spelet.YouAreAWinner)
+			Random random = new Random();
+			var sut = new Game(random);
+			while (!sut.IsWinner)
 			{
-				Spelet.ThrowDices();
+				sut.ThrowDices();
+				Debug.WriteLine(sut.ToString());
 			}
+			Debug.WriteLine($"Won after {sut.ThrowsMade} throws.");
+			Assert.AreEqual(7, sut.NumberOfPoints);
 		}
-
-		
 	}
 }

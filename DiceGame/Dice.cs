@@ -4,16 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiceGame
+namespace ThrowDicesLib
 {
-    public class Dice
-    {
-		public int NumberOfDots;
+	public class Dice
+	{
+		private Random _random;
+		private int _numberOfPoints;
+		public Dice(Random random)
+		{
+			_random = random;
+		}
+		public int NumberOfPoints
+		{
+			get
+			{
+				return _numberOfPoints;
+			}
+		}
 
 		public void Throw()
 		{
-			Random antalPrickar = new Random();
-			NumberOfDots = antalPrickar.Next(1, 6);
+			_numberOfPoints = _random.Next(1, 6);
 		}
-    }
+	}
 }
