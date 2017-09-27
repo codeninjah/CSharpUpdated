@@ -1,6 +1,8 @@
-﻿namespace SchoolApp
+﻿using System;
+
+namespace SchoolApp
 {
-	internal class Class
+	internal class Class : IComparable<Class>
 	{
 		private string namn;
 		public int antalelever;
@@ -9,6 +11,12 @@
 		{
 			this.namn = namn;
 			this.antalelever = antalelever;
+		}
+
+		public int CompareTo(Class other)
+		{
+			return this.antalelever.CompareTo(other.antalelever);
+
 		}
 	}
 }

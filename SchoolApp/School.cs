@@ -16,6 +16,8 @@ namespace SchoolApp
 		public List<Class> Classer { get; internal set; }
 		= new List<Class>();
 
+
+
 		public int NumberOfStudents
 		{
 			get
@@ -23,10 +25,11 @@ namespace SchoolApp
 				return Classer.Sum(klass => klass.antalelever);
 			}
 		}
+		
 
 		public override string ToString()
 		{
-			return namn + " har " + NumberOfStudents.ToString() + " studenter";
+			return namn + " har " + NumberOfStudents.ToString() + " studenter. ";
 		}
 	}
 }
