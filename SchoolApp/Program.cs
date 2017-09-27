@@ -19,7 +19,7 @@ namespace SchoolApp
 			skola.Classer.Add(SPO16);
 			skola.Classer.Add(SPO17);
 
-			Console.WriteLine(skola.NumberOfStudents);
+			Console.WriteLine($"{skola}");
 			
 		}
 	}

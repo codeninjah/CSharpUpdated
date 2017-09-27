@@ -26,7 +26,7 @@ namespace SchoolApp
 
 		public override string ToString()
 		{
-			return NumberOfStudents.ToString();
+			return namn + " har " + NumberOfStudents.ToString() + " studenter";
 		}
 	}
 }
