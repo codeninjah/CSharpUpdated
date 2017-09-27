@@ -18,5 +18,7 @@ namespace SchoolApp
 			return this.antalelever.CompareTo(other.antalelever);
 
 		}
+
 	}
+
 }

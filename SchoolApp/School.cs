@@ -25,11 +25,30 @@ namespace SchoolApp
 				return Classer.Sum(klass => klass.antalelever);
 			}
 		}
+
+		//public int nStudentsPerClass
+		//{
+		//	get
+		//	{
+		//		return Classer.Select(klass => klass.antalelever);
+		//	}
+		//}
+
+		//public int NumberOfStudentsPerClass => Classer.Where(C => C.antalelever);
+
+		public int AntalClasser
+		{
+			get
+			{
+				return Classer.Count();
+			}
+		}
 		
 
 		public override string ToString()
 		{
-			return namn + " har " + NumberOfStudents.ToString() + " studenter. ";
+			return namn + " har " + NumberOfStudents.ToString() + " studenter. " + AntalClasser + " " +
+				Classer.Select(a => a.antalelever);
 		}
 	}
 }
