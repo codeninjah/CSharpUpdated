@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPConsoleApp", "OOPConsole
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarbuilderApp", "CarbuilderApp\CarbuilderApp.csproj", "{120EABD3-BCDF-4866-9E2E-9D15AD39F12E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp", "SchoolApp\SchoolApp.csproj", "{C9BC2BD6-2F1E-4104-B0F0-794700D75347}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{120EABD3-BCDF-4866-9E2E-9D15AD39F12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{120EABD3-BCDF-4866-9E2E-9D15AD39F12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{120EABD3-BCDF-4866-9E2E-9D15AD39F12E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BC2BD6-2F1E-4104-B0F0-794700D75347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BC2BD6-2F1E-4104-B0F0-794700D75347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BC2BD6-2F1E-4104-B0F0-794700D75347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BC2BD6-2F1E-4104-B0F0-794700D75347}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,6 +180,7 @@ Global
 		{AEF5B73B-4522-490F-BF7A-A8B862F0A62F} = {7252C084-0360-46AA-8003-FC41A2290FA1}
 		{908721C1-F2D8-4818-9945-D438514B6472} = {254FC40B-2092-491E-8596-467AFC833AB0}
 		{120EABD3-BCDF-4866-9E2E-9D15AD39F12E} = {254FC40B-2092-491E-8596-467AFC833AB0}
+		{C9BC2BD6-2F1E-4104-B0F0-794700D75347} = {254FC40B-2092-491E-8596-467AFC833AB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F24F730-EE1B-4D8E-86DA-E1EC27CB103B}
