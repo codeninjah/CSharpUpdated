@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CarbuilderApp
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			var aCar = new Car("Mattias Cybervagn");
+			var anEngine = new Engine(350, 1200000M);
+			var door1 = new Door(2000M);
+			var door2 = new Door(1500000M);
+			var chassi = new Chassi(50000M);
+			aCar.Parts.Add(anEngine);
+			aCar.Parts.Add(door1);
+			aCar.Parts.Add(door2);
+			aCar.Parts.Add(chassi);
+			decimal cost = aCar.Cost;
+			Console.WriteLine($"{aCar} costs {aCar.Cost}");
+		}
+	}
+}
