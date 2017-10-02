@@ -14,5 +14,16 @@ namespace PartTest
 
 			Assert.AreEqual("Mattias Asplund (19710405-7852)", sut.ToString());
 		}
+
+		[TestMethod]
+		public void CanHandleThreeAccountabilities()
+		{
+			var sut = new Part("Mattias Asplund", "19710405-7852");
+
+			Assert.AreEqual("Mattias Asplund (19710405-7852)", sut.ToString());
+		}
+
 	}
+
+
 }
