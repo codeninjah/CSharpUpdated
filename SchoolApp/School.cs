@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace SchoolApp
 {
@@ -48,15 +49,15 @@ namespace SchoolApp
 		{
 			get
 			{
-				return Classer.Select(klass =>klass.antalelever).ToString();
-
+				var sb = new StringBuilder();
+				Classer.ForEach(c => sb.Append(c.antalelever.ToString() + " "));
+				return sb.ToString();
 			}
 		}		
 
 		public override string ToString()
 		{
-			return namn + " har " + NumberOfStudents.ToString() + " studenter. " + AntalClasser + " " +
-				int.Parse(antalStudenterPerClass) + " per klass";
+			return namn + " har " + NumberOfStudents.ToString() + " studenter. " + AntalClasser + " " + antalStudenterPerClass;
 		}
 	}
 }

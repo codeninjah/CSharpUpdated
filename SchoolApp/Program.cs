@@ -12,17 +12,18 @@ namespace SchoolApp
 		{
 			var skola = new School("EC Utbildning");
 			var SPO15 = new Class("SPO15", 20);
-			var SPO16 = new Class("SPO16", 25);
+			var SPO16 = new Class("SPO16", 9);
 			var SPO17 = new Class("SPO17", 30);
 
 			skola.Classer.Add(SPO15);
 			skola.Classer.Add(SPO16);
 			skola.Classer.Add(SPO17);
+			skola.Classer.Sort();
 
 			//skola.Classer.Sort();
 			
 
-			Console.WriteLine($"{skola}");
+			Console.WriteLine($"{skola} ");
 			
 		}
 	}
