@@ -37,6 +37,13 @@
 			this.button3 = new System.Windows.Forms.Button();
 			this.saveFileDialog3 = new System.Windows.Forms.SaveFileDialog();
 			this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
+			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+			this.label1 = new System.Windows.Forms.Label();
+			this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+			this.statusStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -81,17 +88,67 @@
 			// 
 			this.openFileDialog3.FileName = "openFileDialog3";
 			// 
+			// statusStrip1
+			// 
+			this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+			this.statusStrip1.Location = new System.Drawing.Point(0, 354);
+			this.statusStrip1.Name = "statusStrip1";
+			this.statusStrip1.Size = new System.Drawing.Size(805, 25);
+			this.statusStrip1.TabIndex = 3;
+			this.statusStrip1.Text = "statusStrip1";
+			// 
+			// toolStripStatusLabel1
+			// 
+			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+			this.toolStripStatusLabel1.Size = new System.Drawing.Size(151, 20);
+			this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(600, 196);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(121, 24);
+			this.comboBox1.TabIndex = 4;
+			// 
+			// statusStrip2
+			// 
+			this.statusStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.statusStrip2.Location = new System.Drawing.Point(0, 332);
+			this.statusStrip2.Name = "statusStrip2";
+			this.statusStrip2.Size = new System.Drawing.Size(805, 22);
+			this.statusStrip2.TabIndex = 5;
+			this.statusStrip2.Text = "statusStrip2";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(522, 265);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(46, 17);
+			this.label1.TabIndex = 6;
+			this.label1.Text = "label1";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(805, 379);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.statusStrip2);
+			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Name = "Form1";
 			this.Text = "Form1";
+			this.statusStrip1.ResumeLayout(false);
+			this.statusStrip1.PerformLayout();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -106,6 +163,12 @@
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.SaveFileDialog saveFileDialog3;
 		private System.Windows.Forms.OpenFileDialog openFileDialog3;
+		private System.Windows.Forms.StatusStrip statusStrip1;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.StatusStrip statusStrip2;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
 	}
 }
 

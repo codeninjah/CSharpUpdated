@@ -20,8 +20,12 @@ namespace WriteTwoFilesToAThirdApp
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			openFileDialog1.ShowDialog();
-			openFileDialog2.ShowDialog();
+			folderBrowserDialog1.ShowDialog();
+			var path = folderBrowserDialog1.SelectedPath;
+			foreach (var fileName in Directory.GetFiles(path, "*.txt"))
+			{
+				comboBox1.Items.Add(fileName);
+			}
 		}
 
 
@@ -40,9 +44,12 @@ namespace WriteTwoFilesToAThirdApp
 			openFileDialog2.ShowDialog();
 			var content2 = File.ReadAllText(openFileDialog2.FileName);
 			//var content3 = File.ReadAllText(openFileDialog1.FileName);
+			toolStripStatusLabel1.Text = openFileDialog2.FileName;
+
 			saveFileDialog2.ShowDialog();
 			File.AppendAllText(saveFileDialog2.FileName, content2);
 			//File.AppendAllText(saveFileDialog3.FileName, content2);
+
 			
 		}
 
@@ -50,9 +57,13 @@ namespace WriteTwoFilesToAThirdApp
 		{
 			openFileDialog1.ShowDialog();
 			var content1 = File.ReadAllText(openFileDialog1.FileName);
+			toolStripStatusLabel1.Text = openFileDialog1.FileName;
+
 
 			saveFileDialog1.ShowDialog();
 			File.AppendAllText(saveFileDialog1.FileName, content1);
+			string content = File.ReadAllText(openFileDialog1.FileName);
+			toolStripStatusLabel1.Text = content;
 		}
 	}
 }
