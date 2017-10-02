@@ -13,6 +13,8 @@ namespace SlideshowApp
 	public partial class Form1 : Form
 	{
 		private int fileNumber;
+		private DateTime startTime;
+		private int timer;
 
 		public Form1()
 		{
@@ -25,6 +27,8 @@ namespace SlideshowApp
 			//pictureBox1.ImageLocation = openFileDialog1.FileNames[fileNumber];
 			//pictureBox1.Load();
 			timer1.Enabled = true;
+			timer2.Enabled = true;
+			startTime = DateTime.Now;
 		}
 
 		private void timer1_Tick(object sender, EventArgs e)
@@ -35,12 +39,21 @@ namespace SlideshowApp
 				{
 				fileNumber = 0;
 			}
+
 		}
 
 		private void DisplayFileNumber(int fileNumber)
 		{
 			pictureBox1.ImageLocation = openFileDialog1.FileNames[fileNumber];
 			pictureBox1.Load();
+			if ((DateTime.Now - startTime).TotalSeconds >= 60)
+				timer1.Enabled = false;
+		}
+
+		private void timer2_Tick(object sender, EventArgs e)
+		{
+			var timer = DateTime.Now.Second.ToString();
+			label1.Text = timer;
 		}
 	}
 }
