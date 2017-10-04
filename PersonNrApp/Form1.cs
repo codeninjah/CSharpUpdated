@@ -12,9 +12,31 @@ namespace PersonNrApp
 {
 	public partial class Form1 : Form
 	{
+		string fNamnT;
+		string eNamnT;
+		string personNrT;
+
 		public Form1()
 		{
 			InitializeComponent();
+		}
+
+		public void EnterDetails(string fNamnT, string eNamnT, string personNrT)
+		{
+			this.fNamnT = fNamnT;
+			this.eNamnT = eNamnT;
+			this.personNrT = personNrT;
+		}
+
+		public string Greeting
+		{
+			get
+			{
+				var sexDigit = int.Parse(personNrT.Substring(9, 1));
+				if (sexDigit % 2 == 1)
+					return $"God morgon herr {this.eNamnT}";
+				return $"God morgon fröken {this.eNamnT}";
+			}
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -23,7 +45,7 @@ namespace PersonNrApp
 			var eNamn = textBox2.Text;
 			var pNummer = textBox3.Text;
 
-			var läggIhop = fNamn + " " + eNamn + " " + pNummer;
+			//var läggIhop = fNamn + " " + eNamn + " " + pNummer;
 
 			var s = int.Parse(pNummer.Substring(9, 1));
 
