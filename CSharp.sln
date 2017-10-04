@@ -81,6 +81,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlideshowApp", "SlideshowAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerForm", "CustomerForm\CustomerForm.csproj", "{31F6B64A-7DF4-4C51-97CB-CD4065AC12D8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Personnr", "Personnr", "{00C6E799-C0EC-4B81-9A4B-C8C16AFE529F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonNrApp", "PersonNrApp\PersonNrApp.csproj", "{220D140B-5CEA-427A-808F-8762FCA3FB38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +203,10 @@ Global
 		{31F6B64A-7DF4-4C51-97CB-CD4065AC12D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31F6B64A-7DF4-4C51-97CB-CD4065AC12D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31F6B64A-7DF4-4C51-97CB-CD4065AC12D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220D140B-5CEA-427A-808F-8762FCA3FB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220D140B-5CEA-427A-808F-8762FCA3FB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220D140B-5CEA-427A-808F-8762FCA3FB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220D140B-5CEA-427A-808F-8762FCA3FB38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -229,6 +237,7 @@ Global
 		{63C34654-8D9F-4A74-B0DA-5DBFFB373AC5} = {D22C1447-921C-4534-8074-A504BE295903}
 		{00A96CBA-3A9A-47C7-8E31-B5FEBD9B7233} = {D22C1447-921C-4534-8074-A504BE295903}
 		{31F6B64A-7DF4-4C51-97CB-CD4065AC12D8} = {D22C1447-921C-4534-8074-A504BE295903}
+		{220D140B-5CEA-427A-808F-8762FCA3FB38} = {00C6E799-C0EC-4B81-9A4B-C8C16AFE529F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F24F730-EE1B-4D8E-86DA-E1EC27CB103B}

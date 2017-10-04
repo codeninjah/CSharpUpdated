@@ -21,7 +21,7 @@ namespace CustomerForm
 		private void button1_Click(object sender, EventArgs e)
 		{
 			
-			var attSkrivaTill = textBox1.Text + ";" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + ";" + textBox2.Text;
+			var attSkrivaTill = textBox1.Text + ";" + dateTimePicker1.Value.ToString("yyyy MM dd") + ";" + textBox2.Text + Environment.NewLine;
 			
 
 			saveFileDialog1.ShowDialog();
