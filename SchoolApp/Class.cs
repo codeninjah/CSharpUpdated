@@ -4,7 +4,7 @@ namespace SchoolApp
 {
 	internal class Class : IComparable<Class>
 	{
-		private string namn;
+		public string namn;
 		public int antalelever;
 
 		public Class(string namn, int antalelever)

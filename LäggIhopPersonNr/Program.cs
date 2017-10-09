@@ -20,12 +20,10 @@ namespace LäggIhopPersonNr
 			for (int i = 0; i < arr4.Length; i++)
 			{
 				summa = arr4.Sum(digit => digit) + 0.00;
-				
 			}
 
-			summa = System.Math.Ceiling((double.Parse(summa.ToString())) * 1000000) / 1000000;
-
-			Console.WriteLine(summa);
+			//won't round 29 up to 30
+			Console.WriteLine(Math.Round(summa) + 1);
 
 		}
 	}

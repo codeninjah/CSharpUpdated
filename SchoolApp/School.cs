@@ -50,8 +50,10 @@ namespace SchoolApp
 			get
 			{
 				var sb = new StringBuilder();
+				var sb2 = new StringBuilder();
 				Classer.ForEach(c => sb.Append(c.antalelever.ToString() + " "));
-				return sb.ToString();
+				//Classer.ForEach(c => sb2.Append(c.namn.ToString() + " "));
+				return sb2.ToString() + " " + sb.ToString() + " ";
 			}
 		}		
 
