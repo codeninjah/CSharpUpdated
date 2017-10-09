@@ -9,8 +9,6 @@ namespace EmployeeLib
 {
     public class EmployeeConverter
     {
-		public int ålder;
-
 		public string Convert(string input)
 		{
 			string pattern = @"\""?([^\""]*) (\w+)\""? (\d{2}) (\d{5}).(\d{2}) (\d{3})-(\d{7})";
