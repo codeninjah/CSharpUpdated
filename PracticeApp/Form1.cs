@@ -46,7 +46,7 @@ namespace PracticeApp
 				var content = File.ReadAllText(lasa_frånFil.FileName);
 				string[] dela = content.Split(';');
 			var name = dela[0];
-			var years = DateTime.Now.Year - dtp_Fodelsedatum.Value.Year;
+			var years = DateTime.Now.Year - DateTime.Parse(dela[1]).Year;
 			var telefonnr = dela[2];
 			var allauppgifter = $"{name} är {years} år gammal och har telefonnumret {telefonnr}";
 
