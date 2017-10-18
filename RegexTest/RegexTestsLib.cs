@@ -6,7 +6,7 @@ using EmployeeLib;
 namespace RegexTest
 {
 	[TestClass]
-	public class UnitTest1
+	public class RegexTestsLib
 	{
 		[TestMethod]
 		public void RegexTest()

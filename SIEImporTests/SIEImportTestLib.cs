@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Globalization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SIEImporTests
 {
@@ -40,6 +41,8 @@ namespace SIEImporTests
 				//F2 = "Fixed number of decimal points"
 				Debug.WriteLine($"{entry.Key} {entry.Value.ToString("F2")}");
 			}
+
+			Debug.WriteLine(accounts.Sum(entry => entry.Value));
 
 		}
 	}
