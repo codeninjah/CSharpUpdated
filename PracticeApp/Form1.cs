@@ -46,10 +46,11 @@ namespace PracticeApp
 				var content = File.ReadAllText(lasa_frånFil.FileName);
 				string[] dela = content.Split(';');
 			var name = dela[0];
-			var years = DateTime.Now.Year - 1971;
 			var age = dela[1];
+			var years = DateTime.Now.Year - dtp_Fodelsedatum.Value.Year;
+			//var age = dela[1];
 			var telefonnr = dela[2];
-			var allauppgifter = $"{name} är {age} år gammal och har telefonnumret {telefonnr}";
+			var allauppgifter = $"{name} är {years} år gammal och har telefonnumret {telefonnr}";
 
 				konvertera_tillFil.ShowDialog();				
 				File.WriteAllText(konvertera_tillFil.FileName, allauppgifter);
