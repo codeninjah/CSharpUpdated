@@ -45,7 +45,7 @@ namespace PracticeLib
 			 //years = DateTime.Now.Year - DateTime.Parse(dela[1]).Year;
 			//year2 = DateTime.Now.Year - year;
 			//years = DateTime.Parse(year);
-			 telefonnr = dela[2];
+			 telefonnr = dela[1];
 			var allauppgifter = $"{name} har telefonnummret {telefonnr} \n";
 			return allauppgifter;
 
