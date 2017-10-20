@@ -78,5 +78,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PracticeLib\PracticeLib.csproj">
+      <Project>{b64a07a2-7ef5-4a02-885c-403eb3cf8484}</Project>
+      <Name>PracticeLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
