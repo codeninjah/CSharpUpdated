@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PracticeLib;
 
 namespace PracticeApp
 {
@@ -44,14 +45,11 @@ namespace PracticeApp
 		{
 				lasa_frånFil.ShowDialog();
 				var content = File.ReadAllText(lasa_frånFil.FileName);
-				string[] dela = content.Split(';');
-			var name = dela[0];
-			var years = DateTime.Now.Year - DateTime.Parse(dela[1]).Year;
-			var telefonnr = dela[2];
-			var allauppgifter = $"{name} är {years} år gammal och har telefonnumret {telefonnr}";
+			Class1 test = new Class1();
+			var test2 = test.delaString(content);
 
 				konvertera_tillFil.ShowDialog();				
-				File.AppendAllText(konvertera_tillFil.FileName, allauppgifter + "\n");
+				File.AppendAllText(konvertera_tillFil.FileName, test2 + "\n");
 			}
 	}
 }

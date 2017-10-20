@@ -10,7 +10,7 @@ namespace PracticeLib
     {
 		string[] dela;
 		string name;
-		DateTime years;
+		int years;
 		string telefonnr;
 
 		public string nameString
@@ -21,7 +21,7 @@ namespace PracticeLib
 			}
 		}
 
-		public DateTime yearsskillnad
+		public int yearsskillnad
 		{
 			get
 			{
@@ -42,11 +42,12 @@ namespace PracticeLib
 		{
 			var dela = s.Split(';');
 			 name = dela[0];
-			 //years = DateTime.Now.Year - DateTime.Parse(dela[1]).Year;
-			//year2 = DateTime.Now.Year - year;
-			//years = DateTime.Parse(year);
-			 telefonnr = dela[1];
-			var allauppgifter = $"{name} har telefonnummret {telefonnr} \n";
+			years = DateTime.Now.Year - DateTime.Parse(dela[1]).Year;
+			var year = DateTime.Parse(dela[1]).Year;
+			//var years = DateTime.Now.Year - year;
+			//years = DateTime.Now.Year - year;
+			telefonnr = dela[2];
+			var allauppgifter = $"{name} är {years} år gammal och har telefonnummret {telefonnr} \n";
 			return allauppgifter;
 
 		}
