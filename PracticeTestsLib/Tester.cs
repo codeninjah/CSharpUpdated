@@ -13,7 +13,7 @@ namespace PracticeTestsLib
 		{
 			Class1 sut = new Class1();
 			var result = sut.delaString("Mattias;1917-05-01;0706186120");
-			Assert.AreEqual(result, $"{sut.nameString} är {sut.yearsskillnad} år gammal och har telefonnummret {sut.telefonnummer} \n");
+			Assert.AreEqual(result, $"{sut.nameString} är {sut.yearsskillnad} år gammal och har telefonnummret {sut.telefonnummer}" + "\n");
 			//var expected
 
 

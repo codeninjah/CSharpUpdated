@@ -43,11 +43,9 @@ namespace PracticeLib
 			var dela = s.Split(';');
 			 name = dela[0];
 			years = DateTime.Now.Year - DateTime.Parse(dela[1]).Year;
-			var year = DateTime.Parse(dela[1]).Year;
-			//var years = DateTime.Now.Year - year;
-			//years = DateTime.Now.Year - year;
+			//var year = DateTime.Parse(dela[1]).Year;
 			telefonnr = dela[2];
-			var allauppgifter = $"{name} är {years} år gammal och har telefonnummret {telefonnr} \n";
+			var allauppgifter = $"{name} är {years} år gammal och har telefonnummret {telefonnr}" + "\n";
 			return allauppgifter;
 
 		}
