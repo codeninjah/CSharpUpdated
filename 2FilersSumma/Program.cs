@@ -14,10 +14,10 @@ namespace _2FilersSumma
 		{
 			var fil1 = "";
 			var fil2 = "";
+			var fil3 = "";
 			var siffra1 = 0M;
 			var siffra2 = 0M;
 			var siffra3 = 0M;
-			//var result = 0M;
 			var lines1 = "";
 			var lines2 = "";
 			var output = "";
@@ -47,7 +47,13 @@ namespace _2FilersSumma
 				Console.WriteLine(output);
 			}
 
-			
+			Console.WriteLine("Ange sökvägen till filen som du vill skriva till");
+			fil3 = Console.ReadLine();
+			StreamWriter skrivatillFil = new StreamWriter(fil3);
+			skrivatillFil.WriteLine(output + "\n");
+			skrivatillFil.Close();
+
+			Console.WriteLine("Great success!");
 
 			Console.ReadKey();
 		}
